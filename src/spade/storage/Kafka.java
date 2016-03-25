@@ -84,8 +84,8 @@ public class Kafka extends AbstractStorage {
             arguments = arguments == null ? "" : arguments;
             Map<String, String> args = parseKeyValPairs(arguments);
 
-            if (args.containsKey("kafkaServer") && !args.get("kafkaServer").isEmpty()) {
-                kafkaServer = args.get("kafkaServer");
+            if (args.containsKey("KafkaServer") && !args.get("KafkaServer").isEmpty()) {
+                kafkaServer = args.get("KafkaServer");
             }
             if (args.containsKey("KafkaTopic") && !args.get("KafkaTopic").isEmpty()) {
                 kafkaTopic = args.get("KafkaTopic");
